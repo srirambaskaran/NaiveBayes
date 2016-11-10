@@ -18,7 +18,7 @@ import org.classifiers.models.UnivariateDataPoint;
 public class MainClass {
 	
 	public static void main(String[] args) throws Exception {
-		String inputFile = "test-files/height-smurf-troll.csv";
+		String inputFile = args[0];
 		
 		BufferedReader reader = new BufferedReader(new FileReader(inputFile));
 		String line = "";
